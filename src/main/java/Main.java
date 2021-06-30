@@ -20,7 +20,7 @@ public class Main {
     }
 
     public static Map<String, Integer> countMap(String text) {
-        String[] split = text.split("[\\s-\\\\t,;.?!:@\\\\[\\\\](){}_*/]");
+        String[] split = text.split("[\\s-\\\\t,;.?!:@[\\\\](){}_*/]");
 
         Map<String, Integer> map = new HashMap<>();
         for (String s : split) {
